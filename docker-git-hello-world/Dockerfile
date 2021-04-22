@@ -36,7 +36,7 @@ apt-get update && apt-get install -y default-jdk maven
 # ADD a directory called docker-git-hello-world inside the UBUNTU IMAGE where you will be moving all of these files under this 
 # DIRECTORY to
 RUN mkdir -p /application
-COPY * /application
+COPY * /application/
 WORKDIR /application
 
 # AFTER YOU HAVE MOVED ALL THE FILES GO AHEAD CD into the directory and run mvn assembly.
